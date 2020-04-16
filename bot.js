@@ -3,7 +3,7 @@ var config = require('./config.js');
 
 var Twitter = new twit(config);
 
-var messages = ["Hello World!"];
+var messages = ["Salut ! J'espere que sa va bien aujourd'hui, je lance ce thread du jour ou vous pouvez mettre vos meilleurs cours du navet en ce matin de semaine (un autre arrivera cet après midi)!\n \n#ACNH #ACNHturnips #turnips #TurnipPrice #AnimalCrossingNewHorizons #AnimalCrossing"];
 var messageLocation = 0;
 
 var writeTweet = function() {
@@ -18,8 +18,9 @@ var writeTweet = function() {
 writeTweet()
 
 var ontime = require('ontime')
+
 ontime({
-    cycle: 'Weekday 08:00:00'
+    cycle: 'Weekday 09:09:12'
 }, function (ot) {
     console.log('weekday!')
     ot.done()
